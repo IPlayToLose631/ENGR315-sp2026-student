@@ -29,3 +29,11 @@ num_evens = 0
 num_odds = 0
 
 ### YOUR CODE BEGINS HERE ###
+
+if (vars % 2 == 0):
+    numsev = num_evens + 1
+else:
+    numsod = num_odds + 1
+
+print(num_odds)
+print(num_evens)
