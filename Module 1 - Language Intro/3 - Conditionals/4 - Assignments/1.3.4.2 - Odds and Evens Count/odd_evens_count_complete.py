@@ -29,8 +29,11 @@ num_evens = 0
 num_odds = 0
 
 ### YOUR CODE BEGINS HERE ###
-for num in nums:    
-    if (num % 2 == 0):
-        num_evens += 1
-    else:
-        num_odds += 1
+
+if (vars % 2 == 0):
+    numsev = num_evens + 1
+else:
+    numsod = num_odds + 1
+
+print(num_odds)
+print(num_evens)
