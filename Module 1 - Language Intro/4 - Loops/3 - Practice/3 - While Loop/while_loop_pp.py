@@ -4,8 +4,8 @@
 # an example while loop is given below
 a = 1
 while a != 5:
-    a = a + 1  # pay attention where the counter (this part of the loop) is located
     print("not 5 yet, but we're at " + str(a))
+    a = a + 1 # pay attention where the counter (this part of the loop) is located
 
 # now, move the counter to before the print statement
 # notice how the value of a has changed in the print value,
@@ -13,20 +13,26 @@ while a != 5:
 
 # first, we're going to write the condition of a while loop
 # this loop is going to multiply the variable x by 2 3 times
-b = 5
-x = 0
-while x != 0:
-    b = b * 2
-    x = x + 1
+x = 5
+b = 0
+while b != 4:
+    x = x * 2
+    b = b + 1
 
 # now, try and write the body of a while loop that should add a variable to itself 5 times
 # when writing the code delete "break" - this is to prevent an infinite loop
 c = 3
 y = 0
 while y < 5:
-    break
+    y = y + 1
+    c = c + c
+    print(c)
 
 # it's time to combine both of these concepts.
 # write a loop entirely from scratch that prints out a statement 6 times
 # the counter variable you will use is z
 z = 0
+
+while z != 6:
+    z = z + 1
+    print("this is a statment")

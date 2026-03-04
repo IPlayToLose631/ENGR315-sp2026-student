@@ -33,7 +33,7 @@ L2 = np.std(random_list_B)
 
 if L1 > L2 :
     print("List A has the highest standard Deviationt")
-    highest_stedv = L1
+    highest_stdev = L1
 elif L1 == L2:
     print("Both lists have the same standard deviation")
 else:

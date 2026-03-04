@@ -10,9 +10,27 @@ def my_pi(target_error):
     """
 
     ### YOUR CODE HERE ###
+    a = 1.0
+    b = 1.0 / math.sqrt(2)
+    t = 1.0 / 4
+    p = 1.0
+
+# perform 10 iterations of this loop
+    for i in range(1, 10):
+    
+        a1 = (a + b ) /2
+        b1 = math.sqrt(a*b)
+        t1 = t - p * ((a - a1) * (a - a1))
+        p1 = p * 2
+    
+        a = a1
+        b = b1
+        t = t1
+        p = p1
+
 
     # change this so an actual value is returned
-    return 0
+    return ((a + b) ** 2) / (4 * t)
 
 
 

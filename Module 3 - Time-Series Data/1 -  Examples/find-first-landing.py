@@ -9,6 +9,7 @@ def calculate_average(data):
     :param data: List of numbers
     :return: Average value of list
     """
+
     return sum(data) / len(data)
 
 
@@ -31,7 +32,7 @@ def main(full_path_to_file):
     data = np.loadtxt(full_path_to_file, delimiter=",")
 
     # select the 8th column as the force plate data
-    force_plate = data[:, 8]
+    force_plate = data[:, 8] 
 
     # save the sampling rate for this data (samples/second)
     sampling_rate = 1000
@@ -85,7 +86,7 @@ if __name__ == "__main__":
     filename = "FP1.txt"
 
     # load force plate data (this path may change based upon where you place this file in your project)
-    path_to_data_folder = "../../data/drop-jump/force-plate/"
+    path_to_data_folder = "./data/drop-jump/force-plate/"
 
     ### Do not modify below this line ###
 
