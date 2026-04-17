@@ -28,8 +28,8 @@ normal_samples = np.random.normal(loc=desired_mu, scale=desired_std, size=num_sa
 """
 Step #2: Find the Mean and Standard Deviation of the Random Sample
 """
-sample_mean = -1
-sample_std_dev = -1
+sample_mean = np.mean(normal_samples)
+sample_std_dev = np.std(normal_samples)
 
 """
 Step #3: Generate the x and y points for the plot for a normal distribution
